@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-catechis
 Version:	1.1
-Release:	4
+Release:	5
 Summary:	Macros for typesetting catechisms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catechis

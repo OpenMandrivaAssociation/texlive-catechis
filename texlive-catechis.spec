@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/catechis
-# catalog-date 2008-09-02 21:23:27 +0200
-# catalog-license lppl
-# catalog-version 1.1
 Name:		texlive-catechis
-Version:	1.1
-Release:	10
+Version:	2.0
+Release:	1
 Summary:	Macros for typesetting catechisms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catechis
@@ -35,12 +29,10 @@ macros are all highly customisable.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/catechis/catechis.sty
-%doc %{_texmfdistdir}/doc/latex/catechis/README
-%doc %{_texmfdistdir}/doc/latex/catechis/catechis.pdf
-%doc %{_texmfdistdir}/doc/latex/catechis/test.tex
+%{_texmfdistdir}/tex/latex/catechis
+%doc %{_texmfdistdir}/doc/latex/catechis
 #- source
-%doc %{_texmfdistdir}/source/latex/catechis/catechis.ins
+%doc %{_texmfdistdir}/source/latex/catechis
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,18 +43,3 @@ macros are all highly customisable.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 750013
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 718013
-- texlive-catechis
-- texlive-catechis
-- texlive-catechis
-- texlive-catechis
-- texlive-catechis
-

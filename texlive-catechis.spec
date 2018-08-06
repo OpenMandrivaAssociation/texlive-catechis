@@ -1,5 +1,5 @@
 Name:		texlive-catechis
-Version:	2.0
+Version:	2.1
 Release:	1
 Summary:	Macros for typesetting catechisms
 Group:		Publishing

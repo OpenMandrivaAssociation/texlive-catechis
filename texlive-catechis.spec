@@ -1,6 +1,6 @@
 Name:		texlive-catechis
-Version:	2.1
-Release:	2
+Version:	2.5
+Release:	1
 Summary:	Macros for typesetting catechisms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catechis

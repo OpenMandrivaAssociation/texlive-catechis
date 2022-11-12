@@ -1,13 +1,13 @@
 Name:		texlive-catechis
-Version:	2.5
+Version:	59998
 Release:	1
 Summary:	Macros for typesetting catechisms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catechis
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.r59998.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.doc.r59998.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.source.r59998.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ which only operates in the catechism parts of a document. The
 macros are all highly customisable.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,8 @@ macros are all highly customisable.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 

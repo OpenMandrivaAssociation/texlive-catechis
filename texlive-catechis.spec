@@ -3,7 +3,7 @@ Version:	59998
 Release:	2
 Summary:	Macros for typesetting catechisms
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catechis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/catechis
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catechis.doc.r%{version}.tar.xz
